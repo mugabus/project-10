@@ -39,7 +39,12 @@ export default function Navbar() {
                 {item.name}
               </Link>
             ))}
-           
+            <Link
+              href="/admin"
+              className="btn-primary"
+            >
+              Admin
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -68,7 +73,13 @@ export default function Navbar() {
                 {item.name}
               </Link>
             ))}
-            
+            <Link
+              href="/admin"
+              className="block px-3 py-2 text-primary-600 font-medium"
+              onClick={() => setIsOpen(false)}
+            >
+              Admin
+            </Link>
           </div>
         </div>
       )}
